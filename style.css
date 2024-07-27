@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    color: white;                                
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(image/bg.jpg);
+    height: 80vh;
+    background-size: cover;
+    position: relative;
+}
+.main .box{
+    height: 80vh;
+    opacity: 0.6;
+    top: 0;
+    position: absolute;
+    background-color: black;
+    width: 100%; 
+}                                          
+nav{
+    display: flex;
+    justify-content: space-between;
+     max-width: 70vw ;    
+     align-items: center;  
+     margin: auto;                                                
+     height: 50px;
+     margin-top: 10px;
+}
+@media screen and (max-width:700px) {
+    nav{
+        max-width: 90vw;
+    }
+    
+}
+.highlight{
+    position: relative;
+    z-index: 10;                                           
+} 
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+}
+.hero span{
+    margin: 10px;
+    text-align: center;
+}
+.hero> :first-child{                          /* '>' represents immediate nth child */
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 900;
+}
+.hero> :nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+.hero> :nth-child(3){
+    font-size: 1.1rem;
+}
+.separation{
+    height: 2px;
+    background-color: rgb(72, 67, 67);
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.btn{
+    padding: 3px 8px;;
+    font-weight: bold;
+}
+.btn-red{
+    background-color: red;
+}
+.common{
+    padding: 6px 30px ;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+#input1{
+    padding: 7px 101px 8px 14px;
+    font-weight: 900;
+    font-size: 0.85rem;
+    background-color: rgba(23, 23, 23, 0.3);
+    border: 2px solid rgba(237, 231, 231, 0.5);
+}
+#lang{
+    background-color: rgba(23, 23, 23, 0.7);
+    
+}
+.first{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 70vw;
+    align-items: center;
+}
+@media screen and (max-width:700px){
+    .first{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+.secImg img{
+    width: 38vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 35vw;
+}
+.secImg{
+  position: relative;
+}
+.enjoy{
+    font: inherit;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.watch{
+    font-size: 1.05rem;
+}
+.first p{
+    padding: 10px;
+}
+.paaji{
+    padding-right: 3vw;;
+    height: 14vw;
+}
+.faq h2{
+    text-align: center;
+    font-size: 2.1rem;
+}
+.faq{
+    
+    padding: 40px;
+}
+.faqBox{
+    display: flex;
+    background-color: #2d2d2d;
+    width: 60vw;
+    margin: 8px auto;
+    padding: 15px;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.faqBox:hover{
+    background-color: #414141;
+    cursor: pointer;
+}
+.set{
+    font-size: 1.2rem;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 10px;
+}
+.gap{
+    margin-bottom: 50px;
+}
+.ques{
+    margin-left: 10vw;
+    padding-top: 1.5rem;
+    
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    margin: auto;
+}
+@media screen and (max-width: 700px) {
+      .footer{
+        grid-template-columns: 1fr 1fr;
+      }
+}
+.footer a{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+   
+}
